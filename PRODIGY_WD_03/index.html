@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mainMenu">
+        <h2><span class="title">WELCOM TO</span> <br> TIC <span>TAC</span> TOE</h2>
+        <button id="startRegistration">Start Game</button>
+    </div>
+
+    <div id="registration" style="display: none;">
+        <h2>Register Players</h2>
+        <form id="registrationForm">
+            <label for="player1"> Player 1:</label>
+            <input type="text" id="player1" name="player1" required>
+            <br>
+            <br>
+            <label for="player2"> Player 2:</label>
+            <input type="text" id="player2" name="player2" required>
+            <br>
+            <button  class="btn" type="submit">Start Game</button>
+        </form>
+        <button class="btn btn-back" id="backToMenuFromRegistration">Back to Main Menu</button>
+    </div>
+
+    <div  class="game" id="game" style="display: none;">
+        <h2>TIC <span>TAC</span> TOE</h2>
+        <div id="players"></div>
+        <div id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <div id="result"></div>
+        <button id="restartButton">Restart Game</button>
+        <button id="backToMenuFromGame">Back to Main Menu</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
